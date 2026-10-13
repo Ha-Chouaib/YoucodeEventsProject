@@ -1,0 +1,13 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.context{
+    background-color: var(--color-bg-hero);
+    padding: 60px;
+    font-family: Inter, Arial, sans-serif;
+ }
+ .context > h1{
+    padding-bottom: 20px;
+ }
