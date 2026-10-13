@@ -1,7 +1,6 @@
 @import url("StyleVariables.css");
 
 button{
-    font-family: var(--font-family-base);
     padding: var(--space-2)  var(--space-3);
     border-radius: var(--radius-md);
     cursor: pointer;
@@ -21,11 +20,13 @@ button{
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-base);
+
 }
 .context{
     background-color: var(--color-bg-hero);
     padding: 60px;
-    font-family: Inter, Arial, sans-serif;
  }
  .context > h1{
     padding-bottom: 20px;
