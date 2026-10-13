@@ -1,0 +1,19 @@
+@import url("StyleVariables.css");
+
+button{
+    font-family: var(--font-family-base);
+    padding: var(--space-2)  var(--space-3);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+
+}
+.primaryBtn
+{
+    background: var(--color-primary);
+    color: var(--color-text-inverse);
+}
+.outlineBtn
+{
+    background: var(--color-bg-page);
+    color: var(--color-primary);
+}
