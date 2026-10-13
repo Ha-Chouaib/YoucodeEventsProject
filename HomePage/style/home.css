@@ -32,7 +32,7 @@ iframe
 }
 main{
     width: 100vw;
-    height: fit-content;
+    height: 100vh;
 }
 
 h1{
@@ -53,6 +53,18 @@ header > nav ul a{
 #menuBtn
 {
     display: none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--color-text-inverse);
+    opacity: .8;
+}
+#copyright{
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-3);
 }
 @media screen and (min-width: 300px){
     
@@ -93,6 +105,41 @@ header > nav ul a{
         border: none;
     }
 
+    iframe{
+        height: 100%;
+    }
+
+    footer{
+        border: none;
+        height: fit-content;
+        background-color: var(--color-bg-footer);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: var(--space-3);
+        color:var(--color-text-inverse) ;
+        padding: var(--space-3);
+    }
+    #footerContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: var(--space-3);
+    }
+    #footerContent > div{
+        display: flex;
+        flex-direction: column;
+        gap:var(--space-1);
+    }
+    footer  ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--space-1);
+        
+
+    };
+
 }
 
 @media screen and (min-width: 768px) {
@@ -123,4 +170,13 @@ header > nav ul a{
         width: fit-content;
     }
 
+    #footerContent{
+        flex-direction: row;
+
+        margin-bottom: var(--space-6);
+    }
+
+    #footerContent > div:first-child > p{
+            width: 60%;
+        }
 }
