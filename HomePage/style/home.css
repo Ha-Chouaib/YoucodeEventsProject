@@ -18,13 +18,11 @@ nav
     
 }
 
-ul{
-    width: 100%;
-    display: flex;
+#menu {
+    list-style: none;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
-    list-style: none;
+    
 
 }
 iframe
@@ -54,14 +52,15 @@ header > nav ul a{
 }
 #menuBtn
 {
-
+    display: none;
 }
 @media screen and (min-width: 300px){
     
-    header > nav > ul{
+    #menu{
         position: absolute;
         flex-direction: column;
-        width: 40vw;
+        min-width: 200px;
+        width: 50vw;
         top: 11vh;
         left: 50%;
         transform: translateX(-50%);
@@ -74,6 +73,7 @@ header > nav ul a{
     header > nav > ul > li
     {
         width: 100%;
+        margin-bottom: 2vh;
         padding: var(--space-3);
         background-color: var(--color-bg-muted);
         border-radius: var(--radius-xl);
@@ -89,7 +89,38 @@ header > nav ul a{
     }
     #menuBtn
     {
+        display: block;
         border: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+   
+     #menuBtn
+    {
+        display: none;
+    }
+    
+    #menu
+    {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        width: 100%;
+        top: 0;
+        gap: 3vw;
+        background-color: transparent;
+        padding-right: 0px;
+
+        
+    }
+    #menu > li{
+        padding: var(--space-1);
+        background-color: transparent;
+        width: fit-content;
     }
 
 }
