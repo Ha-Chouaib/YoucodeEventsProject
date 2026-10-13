@@ -31,3 +31,7 @@ button{
  .context > h1{
     padding-bottom: 20px;
  }
+ a{
+    text-decoration: none;
+    color: var(--color-text-primary);
+ }
