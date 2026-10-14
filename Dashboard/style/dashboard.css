@@ -141,6 +141,54 @@
     font-weight: bolder;
 }
 
+.categoryCard
+{
+    width: 100%;
+    height: 150px;
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-3);
+    padding-left: var(--space-3);
+}
+#CategoriesSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: var(--space-5) 0;
+}
+#CategoriesSection > div{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: var(--space-3);
+}
+.categoryCard figure
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-bg-hero);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CategoryCards
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    place-content: center;
+    
+
+    
+}
 
 @media screen and (min-width:300px) {
     #hero > div{
@@ -152,6 +200,7 @@
     justify-content: center;
     gap: var(--space-5);
     padding: var(--space-9) var(--space-4);
+    
 }
 #heroImgContainer
 {
@@ -181,6 +230,7 @@
 #cards{
     grid-template-columns: repeat(1, minmax(150px, 1fr)) ;
 }
+
 }
 
 @media screen and (min-width: 768px) {
