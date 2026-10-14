@@ -115,6 +115,33 @@
     flex-direction: column;
     gap: var(--space-2);
 }
+
+#ExploreSection
+{
+    height: 30vh;
+    width: 100%;
+    margin:var(--space-5) 0px;
+    background-color: var(--color-primary);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    place-items: center;
+    place-content: center;
+}
+#ExploreSection > div
+{
+    height: 100%;
+    width: 100%;
+    padding: var(--space-5);
+    color: var(--color-text-inverse);
+}
+#ExploreSection  small
+{
+    font-size: 3vw;
+    margin-bottom: var(--space-3);
+    font-weight: bolder;
+}
+
+
 @media screen and (min-width:300px) {
     #hero > div{
     width: 60%;
