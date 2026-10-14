@@ -35,6 +35,86 @@
     font-size: 2vw;
 }
 
+#cardsSection
+{
+    width: 100%;
+    height: fit-content;
+    
+}
+#cardsSection a{
+    color: var(--color-text-link);
+}
+#cardsSection > div:first-child
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#cardsSection > div:first-child >h2{
+    font-size: 1.6vw;
+}
+#cardsSection > div:first-child > a
+{
+    font-size: .2vw;
+}
+#cards
+{
+    display:grid ;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) ;
+    gap: var(--space-5);
+    place-items: center;
+    margin-top: var(--space-4);
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 700px;
+    height: fit-content;
+    background: var(--color-bg-card);
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-lg);
+    
+}
+.card > img
+{
+    width: 100%;
+    height: 30%;
+}
+.card a{
+    font-size: 9px;
+    font-weight: bold;
+}
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-10);
+    padding: 0px var(--space-4);
+}
+.cardContent > div:first-child > small
+{
+    background-color: var(--color-bg-hero);
+    color: var(--color-text-link);
+    border-radius: var(--radius-pill) ;
+    padding: var(--space-1) var(--space-4);
+    width: fit-content;
+    
+}
+.cardContent > div:first-child 
+{
+    
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+.cardDetails
+{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
 @media screen and (min-width:300px) {
     #hero > div{
     width: 60%;
@@ -71,6 +151,9 @@
 #heroActions > button{
     width: 100%;
 }
+#cards{
+    grid-template-columns: repeat(1, minmax(150px, 1fr)) ;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -106,6 +189,9 @@
 #heroActions > button{
     width: fit-content;
 }
+#cards{
+    grid-template-columns: repeat(2, minmax(150px, 1fr)) ;
+}
 }
 
 @media screen and (min-width: 1440px) {
@@ -129,5 +215,7 @@
         height: 60%;
         max-width: 800px;
     }
-
+#cards{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) ;
+}
 }
