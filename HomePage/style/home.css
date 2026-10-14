@@ -1,6 +1,11 @@
 @import url("../../Assets/StyleVariables.css");
 
-
+body
+{
+    margin: 0;
+    height: 100%;
+    
+}
 
 header{
     background-color: var(--color-bg-page);
@@ -29,6 +34,8 @@ iframe
 {
     width: 100%;
     height: 100%;
+    display: block;
+    border: none;
 }
 main{
     width: 100vw;
