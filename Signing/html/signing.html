@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="/Assets/global.css">
+    <link rel="stylesheet" href="../style/signing.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Inscription</h1>
+            <p>Réservez votre place à un atelier, une conférence, un hackathon ou une rencontre. L'inscription est gratuite.</p>
+        </section>
+        <section>
+            <form action="#" method="post">
+                 <h2>Vos informations</h2>
+                 <p>Les champs marqués * sont obligatoires.</p>
+                 <label for="lname"> Nom *</label><br>
+                 <input type="text" id="lname" name="Nom" placeholder="Votre nom" required><br>
+                 <label for="fname">Prénom *</label><br>
+                 <input type="text" id="fname" name="Prénom" value="Salma" required><br>
+                 <label for ="email" > Adresse e-mail *</label><br>
+                 <input type="email" id="email" name="e-mail" required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" title="Erreur : saisissez une adresse valide, par exemple nom@domaine.ma" value="salma@exemple"><br>
+                 <p>Erreur : saisissez une adresse valide, par exemple nom@domaine.ma</p>
+                 <label for="tele" >Téléphone</label><br>
+                 <input type="tel" id ="tele" name="Téléphone" value ="06 12 34 56 78" required><br>
+                 <label  for="event">Événement choisi *</label><br>
+                 <select name="Choisir un événement" id="event">
+                    <option value="e.t">Événements techniques</option>
+                    <option value ="a.p"> Activités pédagogiques </option>
+                    <option value ="I.p">Insertion professionnelle </option>
+                 </select><br>
+                 <label for ="Niv">Niveau *</label><br>
+                   <input type ="radio" name="choix" value="1">Débutant
+                   <input type="radio" name ="choix" value="2">Intermédiaire
+                   <input type="radio" name ="choix" value="3">Avancé<br>
+                 <label for ="msg">Message(facultatif)</label><br>
+                 <textarea name="message" rows="5" cols="30" placeholder="Vos attentes, vos questions…"></textarea> <br>
+                 <input type ="checkbox" id ="accepter" required>
+                 <label for="accepter">J'accepte que mes données servent à gérer mon inscription. *</label> <br>
+                 <button type="submit">Valider mon inscription</button>
+
+
+
+           
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
