@@ -1,1 +1,104 @@
 @import url("../../Assets/StyleVariables.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.context {
+    background-color: var(--color-bg-hero);
+    padding: var(--space-16);
+    font-family: Inter, Arial, sans-serif;
+}
+
+.space {
+    margin-left: 6vw;
+}
+
+.context>h1 {
+    padding-bottom: var(--space-5);
+}
+
+/*maine est section*/
+
+.centre>h2 {
+    margin-left: 175px;
+    margin-top: var(--space-12);
+    font-family: Inter, Arial, sans-serif;
+}
+
+.div-1 {
+    min-width: 200px;
+    border: solid 2px var(--color-border);
+    background-color: white;
+    border-radius: 8px;
+}
+
+.grand {
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-family-base);
+}
+
+.dev {
+    color: var(--color-text-link);
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-sm);
+}
+
+.div-1>div {
+    padding: var(--space-3);
+
+}
+
+.texte-1 {
+    width: 340px;
+    font-family: var(--font-family-base);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+}
+
+p {
+    padding: 5px;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+     flex-wrap: wrap;
+    gap: var(--space-5);
+    margin-top: var(--space-5);
+}
+
+.last-card{
+    margin-top: var(--space-8);
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+.last-card > div:first-child{
+    width: 80%;
+    font-family: Inter, Arial, sans-serif;
+}
+.last-card > div:last-child{
+  display: flex;
+  width: 80%;
+}
+ 
+#partenaires{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 10px;
+}
+
+#partenaires > div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: var(--shadow-lg);
+    height: 50px;
+    border-radius: var(--radius-lg);
+    padding: var(--space-3);
+}
+
