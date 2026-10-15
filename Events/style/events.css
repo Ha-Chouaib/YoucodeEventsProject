@@ -14,6 +14,12 @@ body{
  height: 560px;
 
 }
+.hero {
+    background-color: var(--color-bg-hero);
+    padding: 30px;
+    margin: 0px;
+    outline: 0px;
+}
 .card>img{
  border-radius:  var(--radius-md);
  
