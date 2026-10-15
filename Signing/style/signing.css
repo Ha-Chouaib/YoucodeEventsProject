@@ -34,6 +34,67 @@ label{
     font-weight: bold;
      
 }
+#fname{
+    border-color:var(--color-success);
+    padding-left:2%;
+    
+}
+#validate{
+    color:var(--color-success);
+    padding: 10px 0px;
+}
+#email{
+    border-color:var(--color-error);
+    padding-left:2%;
+}
+#invalide{
+    color:var(--color-error);
+    padding: 10px 0px;
+}
+#tele{
+    padding-left:2%;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    
+}
+#event option{
+    padding-right: 45%;   
+}
+select{
+   padding-right:120px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   border-radius:var(--radius-md);
+   border-color: #78716C;
+   font-size:var(--font-size-sm);
+   padding-left:2%;
+}
+.Niveau{
+    display: flex;
+    justify-content:row;
+    flex-wrap: wrap;  
+   gap: 40px;   
+}
+.message{
+    padding-right:100px;
+    border-radius:var(--radius-md);
+    padding-top:2%;
+    padding-left:2%;
+}
+.acc{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+#accepter{
+    margin: 10px;
+}
+.acc label{
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-regular);
+}
 
 @media screen and (max-width: 375px){ 
 

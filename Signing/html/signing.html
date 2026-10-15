@@ -20,27 +20,36 @@
                  <label for="lname"> Nom *</label><br>
                  <input type="text" id="lname" name="Nom" placeholder=" Votre nom" required><br>
                  <label for="fname">Prénom *</label><br>
-                 <input type="text" id="fname" name="Prénom" value=" Salma" required><br>
-                 <p>Champ valide.</p>
+                 <input type="text" id="fname" name="Prénom" value=" Salma" required ><br>
+                 <p id="validate">Champ valide.</p>
                  <label for ="email" > Adresse e-mail *</label><br>
-                 <input type="email" id="email" name="e-mail" required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" title="Erreur : saisissez une adresse valide, par exemple nom@domaine.ma" value="salma@exemple"><br>
-                 <p>Erreur : saisissez une adresse valide, par exemple nom@domaine.ma</p>
+                 <input type="email" id="email" name="e-mail" required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" title=" Erreur : saisissez une adresse valide, par exemple nom@domaine.ma" value="salma@exemple"><br>
+                 <p id="invalide">Erreur : saisissez une adresse valide, par exemple nom@domaine.ma</p>
                  <label for="tele" >Téléphone</label><br>
-                 <input type="tel" id ="tele" name="Téléphone" value ="06 12 34 56 78" required><br>
+                 <input type="tel" id ="tele" name="Téléphone" placeholder=" 06 12 34 56 78" ><br>
                  <label  for="event">Événement choisi *</label><br>
-                 <select name="Choisir un événement" id="event">
+                 <select name="Choisir un événement" id="event" >
+                    <option value="" disabled selected>Choisissez un évenement </option>
                     <option value="e.t">Événements techniques</option>
                     <option value ="a.p"> Activités pédagogiques </option>
                     <option value ="I.p">Insertion professionnelle </option>
                  </select><br>
+                 
                  <label for ="Niv">Niveau *</label><br>
-                   <input type ="radio" name="choix" value="1">Débutant
-                   <input type="radio" name ="choix" value="2">Intermédiaire
-                   <input type="radio" name ="choix" value="3">Avancé<br>
+                 <div class="Niveau">
+                    <div><input type ="radio" name="choix" value="1">Débutant</div>
+                    <div><input type="radio" name ="choix" value="2">Intermédiaire</div>
+                    <div><input type="radio" name ="choix" value="3">Avancé<br></div>
+                  
+                   
+                   
+                 </div>
+                   
                  <label for ="msg">Message(facultatif)</label><br>
-                 <textarea name="message" rows="5" cols="30" placeholder="Vos attentes, vos questions…"></textarea> <br>
-                 <input type ="checkbox" id ="accepter" required>
-                 <label for="accepter">J'accepte que mes données servent à gérer mon inscription. *</label> <br>
+                 <textarea class="message" name="message" rows="5" cols="30" placeholder="Vos attentes, vos questions…"></textarea> <br>
+                 <div class="acc"><input type ="checkbox" id ="accepter" required>
+                 <label for="accepter">J'accepte que mes données servent à gérer mon inscription. *</label> <br></div>
+                 
                  <button class="primaryBtn" type="submit">Valider mon inscription</button>
 
 
