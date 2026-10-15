@@ -1,4 +1,7 @@
 @import url("../../Assets/StyleVariables.css");
+*{
+
+}
 form{
     border:solid 2px ;
     border-color:#E7E5E4;
@@ -29,9 +32,9 @@ input{
 }
 label{
     display: block;
-    margin-top :10px !important;
     font-size:var(--font-size-base);
     font-weight: bold;
+    margin:10px 0px;
      
 }
 #fname{
@@ -41,7 +44,6 @@ label{
 }
 #validate{
     color:var(--color-success);
-    padding: 10px 0px;
 }
 #email{
     border-color:var(--color-error);
@@ -59,9 +61,10 @@ div{
     flex-direction: row;
     
 }
-#event option{
-    padding-right: 45%;   
+#event{
+    width: 100%;
 }
+
 select{
    padding-right:120px;
    padding-bottom: 10px;
@@ -75,13 +78,17 @@ select{
     display: flex;
     justify-content:row;
     flex-wrap: wrap;  
-   gap: 40px;   
+    column-gap: 50px; 
+    row-gap: 10px;
+     
 }
+
 .message{
     padding-right:100px;
     border-radius:var(--radius-md);
     padding-top:2%;
     padding-left:2%;
+    width: 100%;
 }
 .acc{
     display: flex;
@@ -95,8 +102,14 @@ select{
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-regular);
 }
-
-@media screen and (max-width: 375px){ 
-
-    
+.inputsWraper{
+    margin:10px 0px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap:1vw;
+}
+.inputsContainer{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
 }
