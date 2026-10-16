@@ -14,11 +14,7 @@
 .space {
     margin-left: 6vw;
 }
-
-.context>h1 {
-    padding-bottom: var(--space-5);
-}
-
+ 
 /*maine est section*/
 
 .centre>h2 {
@@ -46,7 +42,7 @@
     font-size: var(--font-size-sm);
 }
 
-.div-1>div {
+.div-1 > div {
     padding: var(--space-3);
 
 }
@@ -76,7 +72,7 @@ p {
     align-items: center;
     flex-direction: column; 
 }
-.last-card > div:first-child{
+.last-card > div:nth-child(1){
     width: 80%;
     font-family: Inter, Arial, sans-serif;
 }
@@ -101,4 +97,3 @@ p {
     border-radius: var(--radius-lg);
     padding: var(--space-3);
 }
-
