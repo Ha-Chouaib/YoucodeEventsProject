@@ -1,1 +1,130 @@
+
 @import url("../../Assets/StyleVariables.css");
+*{
+
+}
+main >section:last-child{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    border:solid 2px ;
+    border-color:#E7E5E4;
+    border-radius: var(--radius-md);
+    padding:var(--space-4);
+    margin: var(--space-5);
+   width: 90%;
+
+}
+form h2{
+    font-style:var(--font-family-base) ;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+form p:first-of-type{
+    color:var(--color-text-muted) ;
+    ;
+}
+form  {
+    margin-top: 10px;
+} 
+input{
+    border-radius: var(--radius-md);
+    border:solid 2px;
+    border-color: #78716C;
+    padding-right: 45%;
+    padding-bottom: 11px;
+    padding-top: 11px;
+}
+label{
+    display: block;
+    font-size:var(--font-size-base);
+    font-weight: bold;
+    margin:10px 0px;
+     
+}
+#fname{
+    border-color:var(--color-success);
+    padding-left:2%;
+    
+}
+#validate{
+    color:var(--color-success);
+}
+#email{
+    border-color:var(--color-error);
+    padding-left:2%;
+}
+#invalide{
+    color:var(--color-error);
+    padding: 10px 0px;
+}
+#tele{
+    padding-left:2%;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    
+}
+#event{
+    width: 100%;
+}
+
+select{
+   padding-right:120px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   border-radius:var(--radius-md);
+   border-color: #78716C;
+   font-size:var(--font-size-sm);
+   padding-left:2%;
+}
+.Niveau{
+    display: flex;
+    justify-content:row;
+    flex-wrap: wrap;  
+    column-gap: 50px; 
+    row-gap: 10px;
+     
+}
+
+.message{
+    padding-right:100px;
+    border-radius:var(--radius-md);
+    padding-top:2%;
+    padding-left:2%;
+    width: 100%;
+}
+.acc{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+#accepter{
+    margin: 10px;
+}
+.acc label{
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-regular);
+}
+.inputsWraper{
+    margin:10px 0px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:1vw;
+}
+.inputsContainer{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+}
+
+@media screen and  ( min-width:768px){
+    form{
+        width: 50%;
+    }
+    
+}

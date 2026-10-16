@@ -1,1 +1,75 @@
 @import url("../../Assets/StyleVariables.css");
+body{
+    font-family: var(--font-family-base);
+}
+.card {
+ display: flex;
+ flex-direction: column;
+ margin: 10px;
+ padding: 0px;
+ border-radius:  var(--radius-md);
+ box-shadow: var(--shadow-md);
+ background-color: var(-color-bg-card); 
+ width:100vw;
+ height: 100hw;
+
+}
+.hero {
+    background-color: var(--color-bg-hero);
+    padding: 30px;
+    margin: 0px;
+    outline: 0px;
+}
+.card>img{
+ border-radius:  var(--radius-md);
+ 
+}
+.card>div>button{
+    padding: var(--space-4);
+    border-radius: var(--radius-pill);
+    border: none;
+    background-color: var(--color-bg-hero);
+    color: var(--color-text-link);
+    margin-right: 70%;
+}
+.card>div{
+    display: flex;
+    flex-direction: column;
+    margin: var(--space-5);
+}
+.card>div>div{
+    display: flex;
+    margin: var(--space-2);
+    align-items: center;
+}
+.card>div>div>img {
+    width: max-content;
+    min-height: max-content;
+    padding: var(--space-2);
+}
+.card>div>div>p {
+   color: var(--color-text-muted);
+}
+.card>div>div>a {
+   color: var(--color-text-link);
+   text-decoration: none;
+   font-weight:var(--font-weight-regular);
+} 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (orientation: landscape) {
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   
+    .card{
+        width: 400px;
+
+    }
+}
